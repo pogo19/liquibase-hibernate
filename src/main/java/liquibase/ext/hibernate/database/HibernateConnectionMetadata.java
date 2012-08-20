@@ -700,6 +700,16 @@ public class HibernateConnectionMetadata implements DatabaseMetaData {
         return null;  
     }
 
+    public ResultSet getPseudoColumns(String catalog, String schemaPattern, String tableNamePattern,
+                                    String columnNamePattern) throws SQLException
+    {
+      return null;
+    }
+
+    public boolean generatedKeyAlwaysReturned() throws SQLException {
+      return false;
+    }
+
     public <T> T unwrap(Class<T> iface) throws SQLException {
         return null;  
     }
