@@ -81,27 +81,27 @@ public class HibernateConnectionMetadata implements DatabaseMetaData {
     }
 
     public boolean supportsMixedCaseIdentifiers() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean storesUpperCaseIdentifiers() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean storesLowerCaseIdentifiers() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean storesMixedCaseIdentifiers() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsMixedCaseQuotedIdentifiers() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean storesUpperCaseQuotedIdentifiers() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean storesLowerCaseQuotedIdentifiers() throws SQLException {
@@ -145,15 +145,15 @@ public class HibernateConnectionMetadata implements DatabaseMetaData {
     }
 
     public boolean supportsAlterTableWithAddColumn() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsAlterTableWithDropColumn() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsColumnAliasing() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean nullPlusNonNullIsNull() throws SQLException {
@@ -185,7 +185,7 @@ public class HibernateConnectionMetadata implements DatabaseMetaData {
     }
 
     public boolean supportsGroupBy() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsGroupByUnrelated() throws SQLException {
@@ -217,7 +217,7 @@ public class HibernateConnectionMetadata implements DatabaseMetaData {
     }
 
     public boolean supportsCoreSQLGrammar() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsExtendedSQLGrammar() throws SQLException {
@@ -273,59 +273,59 @@ public class HibernateConnectionMetadata implements DatabaseMetaData {
     }
 
     public boolean supportsSchemasInDataManipulation() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSchemasInProcedureCalls() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSchemasInTableDefinitions() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSchemasInIndexDefinitions() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSchemasInPrivilegeDefinitions() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsCatalogsInDataManipulation() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsCatalogsInProcedureCalls() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsCatalogsInTableDefinitions() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsCatalogsInIndexDefinitions() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsCatalogsInPrivilegeDefinitions() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsPositionedDelete() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsPositionedUpdate() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSelectForUpdate() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsStoredProcedures() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSubqueriesInComparisons() throws SQLException {
@@ -333,27 +333,27 @@ public class HibernateConnectionMetadata implements DatabaseMetaData {
     }
 
     public boolean supportsSubqueriesInExists() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSubqueriesInIns() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsSubqueriesInQuantifieds() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsCorrelatedSubqueries() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsUnion() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsUnionAll() throws SQLException {
-        return false;  
+        return true;  
     }
 
     public boolean supportsOpenCursorsAcrossCommit() throws SQLException {

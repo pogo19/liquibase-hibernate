@@ -20,28 +20,6 @@ public class HibernateGenericDialect extends Dialect {
 
     @Override
     public String getTypeName(int code, long length, int precision, int scale) throws HibernateException {
-        if (code == Types.BIGINT) {
-            return "bigint";
-        } else if (code == Types.BOOLEAN) {
-            return "boolean";
-        } else if (code == Types.BLOB) {
-            return "blob";
-        } else if (code == Types.CLOB) {
-            return "clob";
-        } else if (code == Types.DATE) {
-            return "date";
-        } else if (code == Types.FLOAT) {
-            return "float";
-        } else if (code == Types.TIME) {
-            return "time";
-        } else if (code == Types.TIMESTAMP) {
-            return "datetime";
-        } else if (code == Types.VARCHAR) {
-            return "varchar";
-        } else if (code == -9 ) { // Types.NVARCHAR in 1.6
-            return "nvarchar";            
-        } else {
-            return realDialect.getTypeName(code, length, precision, scale);
-        }
-    }
+		return realDialect.getTypeName(code, length, precision, scale);
+	}
 }

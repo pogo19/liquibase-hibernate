@@ -257,7 +257,7 @@ public class HibernateDatabase implements Database {
     }
 
     public boolean supportsTablespaces() {
-        return false;
+        return true;
     }
 
     public String getViewDefinition(String schemaName, String name) throws DatabaseException {
@@ -317,7 +317,7 @@ public class HibernateDatabase implements Database {
     }
 
     public boolean supportsSchemas() {
-        return false;
+        return true;
     }
 
     public String generatePrimaryKeyName(String tableName) {
@@ -448,6 +448,6 @@ public class HibernateDatabase implements Database {
     }
 
     public boolean supportsDropTableCascadeConstraints() {
-        return false;
+        return true;
     }
 }

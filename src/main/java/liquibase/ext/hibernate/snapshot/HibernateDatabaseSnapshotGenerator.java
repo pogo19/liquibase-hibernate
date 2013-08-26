@@ -92,6 +92,7 @@ public class HibernateDatabaseSnapshotGenerator implements DatabaseSnapshotGener
                 org.hibernate.mapping.Table hibernateTable = (org.hibernate.mapping.Table) tableMappings.next();
                 if (hibernateTable.isPhysicalTable()) {
                     Table table = new Table(hibernateTable.getName());
+                    table.setSchema(hibernateTable.getSchema());
                     snapshot.getTables().add(table);
                     System.out.println("seen table " + table.getName());
 
@@ -152,7 +153,7 @@ public class HibernateDatabaseSnapshotGenerator implements DatabaseSnapshotGener
                     org.hibernate.mapping.PrimaryKey hibernatePrimaryKey = hibernateTable.getPrimaryKey();
                     if (hibernatePrimaryKey != null) {
                         PrimaryKey pk = new PrimaryKey();
-                        pk.setName(hibernatePrimaryKey.getName());
+                        // pk.setName(hibernatePrimaryKey.getName()); (dont set name, causes issue with inheritance structures)
                         pk.setTable(table);
                         for (Object hibernateColumn : hibernatePrimaryKey.getColumns()) {
                             pk.getColumnNamesAsList().add(((org.hibernate.mapping.Column) hibernateColumn).getName());
